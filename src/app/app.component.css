@@ -1,0 +1,24 @@
+
+
+.main-menu{
+  font-family: 'Roboto', sans-serif;
+  width:100%;
+  text-align: center;
+}
+
+.main-menu ul{
+  list-style: none;
+  display: inline-flex;
+}
+
+.main-menu li{
+  margin: 10px 20px;
+  padding: 20px 10px;
+  min-width: 120px;
+}
+
+.main-menu li:hover{
+  cursor: pointer;
+  padding: 10px 10px;
+  border-top:solid 10px orangered;
+}
