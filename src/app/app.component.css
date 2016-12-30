@@ -1,24 +1,60 @@
 
 
 .main-menu{
+  position: relative;
   font-family: 'Roboto', sans-serif;
   width:100%;
   text-align: center;
+  border-top: solid 1px lightgray;
+  border-bottom:solid 1px lightgray;
+  margin:0;
+  padding:0;
 }
 
 .main-menu ul{
   list-style: none;
   display: inline-flex;
+  padding:0;
+  margin:0;
 }
 
-.main-menu li{
-  margin: 10px 20px;
+.sub-menu{
+  position:relative;
+  margin: 0 20px;
   padding: 20px 10px;
   min-width: 120px;
+  height:16px;
 }
 
-.main-menu li:hover{
+.sub-menu ul{
+  position: absolute;
+  top: 60px;
+  left: -40px;
+}
+
+.sub-menu li{
+  position: relative;
+  margin:0 20px 0;
+}
+
+
+.sub-menu p{
+  margin: 0;
+}
+
+.sub-menu:hover{
   cursor: pointer;
   padding: 10px 10px;
-  border-top:solid 10px orangered;
+  border-top:solid 10px orange;
+}
+
+.sub-menu-container{
+  height:40px;
+  background-color: lightgray;
+}
+
+.sub-menu-items{
+  width: 100%;
+  position: fixed;
+  top: 15px;
 }
