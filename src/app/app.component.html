@@ -1,28 +1,19 @@
 <div class="main-menu">
-  <ul>
-    <li>
-      <div class="sub-menu">
-        <p>DASHBOARD</p>
-      </div>
-    </li>
-    <li>
-      <div class="sub-menu">
-        <p>DEMAND</p>
-        <div class="sub-menu-items">
-          <ul>
-            <li><div>Sub Menu 1</div></li>
-            <li><div>Sub Menu 2 Longer Name</div></li>
-            <li><div>Sub menu 3</div></li>
-            <li><div>Sub Menu 4</div></li>
-          </ul>
-        </div>
+<ul>
+  <li *ngFor="let item of items">
+    <div class="sub-menu">
+      {{ item.name }}
+    </div>
+  </li>
+  <div class="sub-menu-items">
+    <ul>
+      <!--<li *ngFor="let subitem of item.submenus">-->
+        <!--<div>{{ subitem.name }}</div>-->
+      <!--</li>-->
 
-      </div>
-    </li>
-    <li><div class="sub-menu">ORDERS</div></li>
-    <li><div class="sub-menu">SETUP</div></li>
-  </ul>
-  <div class="sub-menu-container">
-
+    </ul>
   </div>
+</ul>
 </div>
+
+
