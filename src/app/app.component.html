@@ -1,18 +1,20 @@
 <div class="main-menu">
 <ul>
-  <li *ngFor="let item of items">
+  <li *ngFor="let x of items">
     <div class="sub-menu">
-      {{ item.name }}
+      {{ x.name }}
     </div>
-  </li>
-  <div class="sub-menu-items">
-    <ul>
-      <!--<li *ngFor="let subitem of item.submenus">-->
-        <!--<div>{{ subitem.name }}</div>-->
-      <!--</li>-->
 
-    </ul>
-  </div>
+    <div class="sub-menu-items">
+      <ul>
+        <li *ngFor="let subitem of x.submenus">
+            <div>{{ subitem.name }}</div>
+        </li>
+      </ul>
+    </div>
+
+  </li>
+
 </ul>
 </div>
 

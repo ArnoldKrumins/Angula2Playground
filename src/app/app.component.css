@@ -55,6 +55,6 @@
 
 .sub-menu-items{
   width: 100%;
-  position: fixed;
-  top: 15px;
+  position: absolute;
+  top: 28px;
 }
